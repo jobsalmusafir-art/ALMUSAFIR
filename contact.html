@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Al-Musafir Travel Agency</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <h2>Company Contact Information</h2>
+    <p>Email: contact@almusafir.com</p>
+    <p>Phone: +1234567890</p>
+    <p>Address: 123 Al-Musafir St, Travel City, Country</p>
+
+    <h2>Our Locations</h2>
+    <ul>
+        <li>Office 1: Downtown Travel Center</li>
+        <li>Office 2: Airport Travel Hub</li>
+        <li>Office 3: Countryside Travel Office</li>
+    </ul>
+
+    <h2>Inquiry Options</h2>
+    <form action="/submit-inquiry" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="inquiry-type">Inquiry Type:</label><br>
+        <select id="inquiry-type" name="inquiry-type" required>
+            <option value="booking">Booking Inquiry</option>
+            <option value="cancellation">Cancellation Inquiry</option>
+            <option value="general">General Inquiry</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <input type="submit" value="Submit Inquiry">
+    </form>
+</body>
+</html>
